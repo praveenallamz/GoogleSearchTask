@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="20.564618">
+<testcase classname="Open Google, search for “J. P. Morgan”, click the first result returned by Google, verify that the J.P. Morgan logo is shown" name="Google Search given text and verify logo displayed as expected" time="20.564618">
+<system-out><![CDATA[Given user is on Home Page..................................................passed
+When he search for "J. P. Morgan"...........................................passed
+Then choose the first item from list........................................passed
+And Verify the logo is displayed............................................passed
+]]></system-out>
+</testcase>
+</testsuite>
