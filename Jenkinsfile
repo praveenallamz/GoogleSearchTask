@@ -1,21 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('Log Tool Version') {
-      parallel {
-        stage('Log Tool Version') {
-          steps {
-            sh '''mvn  --version
-java  -version'''
-          }
-        }
-
-        stage('check for pom') {
-          steps {
-            fileExists 'pom.xml'
-          }
-        }
-
+    stage('check for pom') {
+      steps {
+        fileExists 'pom.xml'
       }
     }
 
