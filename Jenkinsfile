@@ -2,8 +2,19 @@ pipeline {
   agent any
   stages {
     stage('check for pom') {
-      steps {
-        fileExists 'pom.xml'
+      parallel {
+        stage('check for pom') {
+          steps {
+            fileExists 'pom.xml'
+          }
+        }
+
+        stage('Test Log') {
+          steps {
+            sh 'mvn --version'
+          }
+        }
+
       }
     }
 
